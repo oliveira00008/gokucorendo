@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaçao de Goku. html</title>
+    <style>
+           
+        body{
+            background-image: url(imagens/cidade3.jpg);
+            background-size: 1350px;
+            background-repeat: no-repeat;
+                       
+        }
+
+        *{
+            margin: 0px;
+             }
+
+        .gokubr{
+            width: 10px;
+            background-color: wheat;
+            height: 5%;
+        }
+        img{
+            top: 700px;
+            left: -400px;
+            position: absolute;
+            animation-name: correr;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes correr{
+            form{transform: translateX(100%);}
+            100%{transform: translateX(300%);}
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/goku12.gif" alt="imagens.gif">
+    <div class="rua">
+    <div class="gokubr">
+    </div>
+    </div>
+</body>
+</html>
