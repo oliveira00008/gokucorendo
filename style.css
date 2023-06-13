@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+}
+
+/* Ajeitei a imagem para ficar toda na tela */
+/* dessa forma não tem mais efeito de scroll pra baixo */
+body{
+    background-image: url(imagens/cidade3.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gokubr{
+    width: 10px;
+    background-color: wheat;
+    height: 5%;
+}
+
+/* Fiz o goku se posicionar pelo bottom com 3vh (3% de altura total da tela) */
+img{
+    bottom: 3vh;
+    left: -400px;
+    position: absolute;
+    animation-name: correr;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes correr{
+    form{transform: translateX(100%);}
+    100%{transform: translateX(322%);}
+}
